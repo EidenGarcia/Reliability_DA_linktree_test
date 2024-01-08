@@ -13,7 +13,7 @@ body {
 }
 
 .portal-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -23,8 +23,30 @@ body {
     margin-bottom: 20px;
 }
 
+.title-container {
+    position: relative;
+    text-align: center;
+}
+
+.title-background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.title-text {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjust text color as needed */
+    /* You can add more styling to the title text if desired */
+}
 .portal-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portal-link {
@@ -42,4 +64,10 @@ body {
 
 .portal-link:hover {
     background-color: #e0e0e0; /* Change the hover background color as needed */
+}
+
+.guide-image {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
 }

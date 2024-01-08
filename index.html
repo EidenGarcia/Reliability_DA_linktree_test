@@ -1,89 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    #portal {
-      text-align: center;
-    }
-
-    #mainImage {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .linkButton {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    #daTrackers, #daForms, #guides {
-      display: none;
-    }
-
-    .subLinks {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
-    }
-
-    .subLinkButton {
-      padding: 10px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-  </style>
-  <script>
-    function showHide(elementId) {
-      var element = document.getElementById(elementId);
-      if (element.style.display === "none") {
-        element.style.display = "block";
-      } else {
-        element.style.display = "none";
-      }
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliability DA - LinkTree</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div id="portal">
-    <h1>Reliability DA Link Tree</h1>
-    <img id="mainImage" src="path/to/your/image.jpg" alt="Main Image">
-    <div class="linkButton" onclick="showHide('daTrackers')">DA Trackers</div>
-    <div id="daTrackers" class="subLinks">
-      <div class="subLinkButton">Tracker 1</div>
-      <div class="subLinkButton">Tracker 2</div>
-      <div class="subLinkButton">Tracker 3</div>
+    <div class="portal-container">
+        <img src="LUMA Logo.jpg" alt="Wave Image" class="portal-image">
+        <h1 class="portal-title">Reliability DA - LinkTree</h1>
+        <div class="portal-links">
+            <a href="da_trackers.html" class="portal-link">DA - Trackers</a>
+            <a href="da_forms.html" class="portal-link">DA - Forms</a>
+            <a href="guides5.html" class="portal-link">Guides</a>
+        </div>
     </div>
-    <div class="linkButton" onclick="showHide('daForms')">DA Forms</div>
-    <div id="daForms" class="subLinks">
-      <div class="subLinkButton">Form 1</div>
-      <div class="subLinkButton">Form 2</div>
-      <div class="subLinkButton" onclick="showHide('formLinks')">More Forms</div>
-      <div id="formLinks" class="subLinks" style="display: none;">
-        <div class="subLinkButton">Form 3</div>
-        <div class="subLinkButton">Form 4</div>
-      </div>
-    </div>
-    <div class="linkButton" onclick="showHide('guides')">Guides</div>
-    <div id="guides" class="subLinks">
-      <img src="path/to/guide1.jpg" alt="Guide 1" class="subLinkButton" style="max-width: 100px; max-height: 100px;">
-      <img src="path/to/guide2.jpg" alt="Guide 2" class="subLinkButton" style="max-width: 100px; max-height: 100px; align-self: flex-end;">
-    </div>
-  </div>
-
 </body>
 </html>
-
