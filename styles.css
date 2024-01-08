@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.portal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Change the background color as needed */
+}
+
+.portal-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.portal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.portal-links {
+    display: flex;
+}
+
+.portal-link {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.portal-link:hover {
+    background-color: #e0e0e0; /* Change the hover background color as needed */
+}
